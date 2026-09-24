@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Electronic Repair Academy - Learn computer hardware repairs, phone repairs, system configurations, basic electronics, software setup and energy management. 1000+ students trained." />
+  <title>Electronic Repair Academy | Computer & Electronics Repair Training</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" id="navbar" aria-label="Main navigation">
+    <div class="navbar-container">
+      <a href="#home" class="navbar-logo" aria-label="Electronic Repair Academy Home">
+        <svg class="logo-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="4" y="16" width="40" height="4" rx="2" stroke="currentColor" stroke-width="2"/>
+          <rect x="12" y="8" width="24" height="4" rx="2" stroke="currentColor" stroke-width="2"/>
+          <circle cx="16" cy="28" r="6" stroke="currentColor" stroke-width="2"/>
+          <circle cx="32" cy="28" r="6" stroke="currentColor" stroke-width="2"/>
+          <path d="M16 22V28M32 22V28" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <rect x="20" y="30" width="8" height="2" rx="1" fill="currentColor"/>
+        </svg>
+        <span class="logo-text">Electronic Repair Academy</span>
+      </a>
+      <button class="mobile-menu-btn" id="menuBtn" aria-expanded="false" aria-controls="navLinks" aria-label="Open menu">
+        <span class="hamburger" id="hamburger" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+      <ul class="navbar-links" id="navLinks">
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#courses" class="nav-link">Courses</a></li>
+        <li><a href="#achievements" class="nav-link">Achievements</a></li>
+        <li><a href="#auth" class="nav-link">Login / Sign Up</a></li>
+        <li><a href="#auth" class="btn btn-primary nav-btn">Get Started</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-overlay" aria-hidden="true"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot" aria-hidden="true"></span>
+          <span>Est. 2020 &bull; Certified Training Center</span>
+        </div>
+        <h1 id="hero-title" class="hero-title">Electronic Repair <span class="highlight">Academy</span></h1>
+        <p class="hero-subtitle">
+          Master the art of electronic repair with hands-on training from industry experts.
+          From smartphones to industrial systems, become a certified repair professional.
+        </p>
+        <div class="hero-stats">
+          <div class="stat">
+            <span class="stat-number"><span class="count" data-target="5000">0</span>+</span>
+            <span class="stat-label">Students Trained</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number"><span class="count" data-target="100">0</span></span>
+            <span class="stat-label">Courses Offered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number"><span class="count" data-target="100">0</span>%</span>
+            <span class="stat-label">Success Rate</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number"><span class="count" data-target="100">0</span>+</span>
+            <span class="stat-label">Industry Partners</span>
+          </div>
+        </div>
+        <div class="hero-actions">
+          <a href="#courses" class="btn btn-primary btn-lg">Explore Courses &rarr;</a>
+          <a href="#auth" class="btn btn-secondary btn-lg">Enroll Now</a>
+        </div>
+        <div class="hero-trust">
+          <p class="trust-text">Trusted by leading tech companies worldwide</p>
+          <div class="trust-logos">
+            <span class="trust-logo">Samsung</span>
+            <span class="trust-logo">Apple</span>
+            <span class="trust-logo">Dell</span>
+            <span class="trust-logo">HP</span>
+            <span class="trust-logo">Lenovo</span>
+            <span class="trust-logo">Intel</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true">&#8595;</div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section services" id="services" aria-labelledby="services-title">
+      <div class="section-header">
+        <h2 class="section-subtitle">Our Services</h2>
+        <h3 id="services-title" class="section-title">Professional Repair &amp; Support Services</h3>
+      </div>
+      <div class="grid grid-2 services-grid">
+        <article class="service-card card">
+          <div class="service-icon-wrapper" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4 class="service-title">Computer Hardware Repairs</h4>
+          <p class="service-description">Comprehensive hardware diagnostics and repair for desktops, laptops, and workstations. Component-level repair including motherboard, GPU, RAM, and storage devices.</p>
+          <ul class="service-features">
+            <li>&#10003; Motherboard Repair</li>
+            <li>&#10003; GPU Reballing</li>
+            <li>&#10003; Data Recovery</li>
+            <li>&#10003; Custom Builds</li>
+          </ul>
+          <a href="#auth" class="btn btn-primary service-btn">Get Service &rarr;</a>
+        </article>
+        <article class="service-card card">
+          <div class="service-icon-wrapper" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4 class="service-title">Phone Repairs</h4>
+          <p class="service-description">Expert mobile device repair covering screen replacement, battery issues, water damage, charging ports, and microsoldering for all major brands.</p>
+          <ul class="service-features">
+            <li>&#10003; Screen Replacement</li>
+            <li>&#10003; Battery Service</li>
+            <li>&#10003; Water Damage</li>
+            <li>&#10003; Microsoldering</li>
+          </ul>
+          <a href="#auth" class="btn btn-primary service-btn">Get Service &rarr;</a>
+        </article>
+        <article class="service-card card">
+          <div class="service-icon-wrapper" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="7" height="9" rx="1"/><rect x="15" y="3" width="7" height="9" rx="1"/>
+              <rect x="2" y="15" width="7" height="9" rx="1"/><rect x="15" y="15" width="7" height="9" rx="1"/>
+            </svg>
+          </div>
+          <h4 class="service-title">Systems Configurations</h4>
+          <p class="service-description">Professional system setup, optimization, and configuration for Windows, Linux, and macOS. Network configuration, RAID setup, and virtualization.</p>
+          <ul class="service-features">
+            <li>&#10003; OS Installation</li>
+            <li>&#10003; Network Setup</li>
+            <li>&#10003; RAID Configuration</li>
+            <li>&#10003; Virtualization</li>
+          </ul>
+          <a href="#auth" class="btn btn-primary service-btn">Get Service &rarr;</a>
+        </article>
+        <article class="service-card card">
+          <div class="service-icon-wrapper" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 20h9" stroke-linecap="round"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/>
+            </svg>
+          </div>
+          <h4 class="service-title">Software Assistance</h4>
+          <p class="service-description">Complete software support including OS troubleshooting, driver management, malware removal, backup solutions, and custom software deployment.</p>
+          <ul class="service-features">
+            <li>&#10003; OS Troubleshooting</li>
+            <li>&#10003; Malware Removal</li>
+            <li>&#10003; Data Backup</li>
+            <li>&#10003; Software Deployment</li>
+          </ul>
+          <a href="#auth" class="btn btn-primary service-btn">Get Service &rarr;</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ COURSES ============ -->
+    <section class="section courses" id="courses" aria-labelledby="courses-title">
+      <div class="section-header">
+        <h2 class="section-subtitle">Courses</h2>
+        <h3 id="courses-title" class="section-title">Courses We Offer</h3>
+      </div>
+      <div class="grid grid-2 courses-grid">
+        <article class="course-card card popular">
+          <div class="popular-badge">Most Popular</div>
+          <div class="course-icon-wrapper" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4 class="course-title">Computer Hardware &amp; Maintenance</h4>
+          <p class="course-description">Complete hardware training covering PC assembly, troubleshooting, component-level repair, preventive maintenance, and diagnostic techniques.</p>
+          <div class="course-meta">
+            <span class="meta-item">&#9719; 12 Weeks</span>
+            <span class="meta-item">&#🎓; Beginner to Advanced</span>
+          </div>
+          <ul class="course-modules">
+            <li>&#10003; PC Architecture</li>
+            <li>&#10003; Component Testing</li>
+            <li>&#10003; Soldering Basics</li>
+            <li>&#10003; Diagnostic Tools</li>
+            <li>&#10003; Preventive Maintenance</li>
+          </ul>
+          <div class="course-footer">
+            <span class="course-price">$1,299</span>
+            <a href="#auth" class="btn btn-primary course-btn">Enroll Now</a>
+          </div>
+        </article>
+        <article class="course-card card">
+          <div class="course-icon-wrapper" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h4 class="course-title">Basic Electronics</h4>
+          <p class="course-description">Fundamental electronics theory and practice including circuit analysis, component identification, schematic reading, and breadboard prototyping.</p>
+          <div class="course-meta">
+            <span class="meta-item">&#9719; 8 Weeks</span>
+            <span class="meta-item">&#🎓; Beginner</span>
+          </div>
+          <ul class="course-modules">
+            <li>&#10003; Ohm's Law &amp; Circuit Theory</li>
+            <li>&#10003; Resistors, Capacitors, Inductors</li>
+            <li>&#10003; Diodes &amp; Transistors</li>
+            <li>&#10003; Schematic Reading</li>
+            <li>&#10003; Hands-on Prototyping</li>
+          </ul>
+          <div class="course-footer">
+            <span class="course-price">$899</span>
+            <a href="#auth" class="btn btn-primary course-btn">Enroll Now</a>
+          </div>
+        </article>
+        <article class="course-card card">
+          <div class="course-icon-wrapper" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="2" y="3" width="7" height="9" rx="1"/><rect x="15" y="3" width="7" height="9" rx="1"/>
+              <rect x="2" y="15" width="7" height="9" rx="1"/><rect x="15" y="15" width="7" height="9" rx="1"/>
+            </svg>
+          </div>
+          <h4 class="course-title">System Softwares &amp; Setup</h4>
+          <p class="course-description">Operating system installation, configuration, administration, scripting, automation, and enterprise deployment strategies.</p>
+          <div class="course-meta">
+            <span class="meta-item">&#9719; 10 Weeks</span>
+            <span class="meta-item">&#🎓; Intermediate</span>
+          </div>
+          <ul class="course-modules">
+            <li>&#10003; Windows / Linux Administration</li>
+            <li>&#10003; Scripting (PowerShell / Bash)</li>
+            <li>&#10003; Active Directory</li>
+            <li>&#10003; Deployment &amp; Imaging</li>
+            <li>&#10003; Security Hardening</li>
+          </ul>
+          <div class="course-footer">
+            <span class="course-price">$1,099</span>
+            <a href="#auth" class="btn btn-primary course-btn">Enroll Now</a>
+          </div>
+        </article>
+        <article class="course-card card">
+          <div class="course-icon-wrapper" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h4 class="course-title">Energy Management</h4>
+          <p class="course-description">Power systems, energy efficiency, UPS systems, solar installations, power factor correction, and sustainable energy solutions.</p>
+          <div class="course-meta">
+            <span class="meta-item">&#9719; 6 Weeks</span>
+            <span class="meta-item">&#🎓; Advanced</span>
+          </div>
+          <ul class="course-modules">
+            <li>&#10003; Power Systems Basics</li>
+            <li>&#10003; UPS &amp; Battery Systems</li>
+            <li>&#10003; Solar PV Installation</li>
+            <li>&#10003; Energy Auditing</li>
+            <li>&#10003; Power Quality Analysis</li>
+          </ul>
+          <div class="course-footer">
+            <span class="course-price">$799</span>
+            <a href="#auth" class="btn btn-primary course-btn">Enroll Now</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section class="section achievements" id="achievements" aria-labelledby="achievements-title">
+      <div class="section-header">
+        <h2 class="section-subtitle">Achievements</h2>
+        <h3 id="achievements-title" class="section-title">Our Achievement &amp; Why You Choose Us</h3>
+      </div>
+      <div class="achievements-grid grid grid-4">
+        <article class="achievement-card card">
+          <div class="achievement-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+            </svg>
+          </div>
+          <div class="achievement-number"><span class="count" data-target="1000">0</span>+</div>
+          <h4 class="achievement-label">Students Trained</h4>
+          <p class="achievement-description">From beginners to certified professionals</p>
+        </article>
+        <article class="achievement-card card">
+          <div class="achievement-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <div class="achievement-number"><span class="count" data-target="98">0</span>%</div>
+          <h4 class="achievement-label">Employment Rate</h4>
+          <p class="achievement-description">Graduates employed within 6 months</p>
+        </article>
+        <article class="achievement-card card">
+          <div class="achievement-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="achievement-number"><span class="count" data-target="50">0</span>+</div>
+          <h4 class="achievement-label">Industry Partners</h4>
+          <p class="achievement-description">Leading tech companies hiring our graduates</p>
+        </article>
+        <article class="achievement-card card">
+          <div class="achievement-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+            </svg>
+          </div>
+          <div class="achievement-number"><span class="count" data-target="15">0</span>+</div>
+          <h4 class="achievement-label">Certifications</h4>
+          <p class="achievement-description">Industry-recognized certificates offered</p>
+        </article>
+      </div>
+      <div class="why-choose-us">
+        <h3 class="why-choose-title">Why Choose Electronic Repair Academy?</h3>
+        <p class="why-choose-intro">
+          We have trained over <strong>1000+ students</strong> to become computer and electronic literates,
+          transforming them from complete beginners into certified professionals ready for the industry.
+        </p>
+        <div class="why-choose-grid grid grid-3">
+          <article class="why-choose-card card"><h4>Hands-On Training</h4><p>80% practical training with real devices. Work on actual repair scenarios from day one.</p></article>
+          <article class="why-choose-card card"><h4>Expert Instructors</h4><p>Learn from certified technicians with 15+ years industry experience at top tech companies.</p></article>
+          <article class="why-choose-card card"><h4>Modern Facilities</h4><p>State-of-the-art labs with latest diagnostic equipment, microsoldering stations, and testing tools.</p></article>
+          <article class="why-choose-card card"><h4>Career Support</h4><p>Job placement assistance, resume building, interview prep, and lifetime access to alumni network.</p></article>
+          <article class="why-choose-card card"><h4>Flexible Schedule</h4><p>Weekday, weekend, and evening classes. Online and in-person options to fit your lifestyle.</p></article>
+          <article class="why-choose-card card"><h4>Lifetime Access</h4><p>Free refresher courses, updated curriculum access, and ongoing technical support after graduation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ LOGIN / SIGN UP ============ -->
+    <section class="section auth" id="auth" aria-labelledby="auth-title">
+      <div class="section-header">
+        <h2 class="section-subtitle">Join Us</h2>
+        <h3 id="auth-title" class="section-title">Log In / Sign Up</h3>
+        <p class="section-desc">Create a student account to enroll in courses, book repair services and track your progress from beginner to professional.</p>
+      </div>
+      <div class="auth-wrapper">
+        <div class="auth-info card">
+          <h4>Start Your Repair Career</h4>
+          <ul class="auth-benefits">
+            <li>&#10003; Enroll in 4 professional courses</li>
+            <li>&#10003; Book hardware, phone &amp; software services</li>
+            <li>&#10003; Join 1000+ trained professionals</li>
+            <li>&#10003; Get certified &amp; career support</li>
+          </ul>
+          <div class="auth-stats-mini">
+            <div><strong>1000+</strong><span>Students</span></div>
+            <div><strong>98%</strong><span>Success</span></div>
+            <div><strong>4</strong><span>Courses</span></div>
+          </div>
+        </div>
+        <div class="auth-card card">
+          <div class="auth-tabs" role="tablist" aria-label="Login or Sign up">
+            <button role="tab" aria-selected="true" class="auth-tab active" id="loginTab" type="button">Log In</button>
+            <button role="tab" aria-selected="false" class="auth-tab" id="signupTab" type="button">Sign Up</button>
+          </div>
+          <form id="authForm" class="auth-form" novalidate>
+            <div class="form-group hidden" id="nameGroup">
+              <label for="authName">Full Name</label>
+              <input id="authName" type="text" name="name" placeholder="e.g. Adaeze Okafor" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="authEmail">Email Address</label>
+              <input id="authEmail" type="email" name="email" placeholder="you@example.com" autocomplete="email" required />
+            </div>
+            <div class="form-group">
+              <label for="authPassword">Password</label>
+              <div class="password-wrap">
+                <input id="authPassword" type="password" name="password" placeholder="Enter your password" autocomplete="current-password" required />
+                <button type="button" class="show-btn" id="showBtn">Show</button>
+              </div>
+            </div>
+            <div class="form-group hidden" id="courseGroup">
+              <label for="authCourse">Interested Course</label>
+              <select id="authCourse" name="course">
+                <option value="">Select a course...</option>
+                <option>Computer Hardware &amp; Maintenance</option>
+                <option>Basic Electronics</option>
+                <option>System Softwares &amp; Setup</option>
+                <option>Energy Management</option>
+              </select>
+            </div>
+            <p class="auth-message hidden" id="authMessage" role="status"></p>
+            <button type="submit" class="btn btn-secondary auth-submit" id="authSubmit">Log In</button>
+            <p class="auth-switch" id="authSwitch">New to the Academy? <button type="button" id="switchLink">Sign up free</button></p>
+          </form>
+          <div class="auth-logged hidden" id="authLogged">
+            <div class="auth-success-icon" aria-hidden="true">&#10003;</div>
+            <h4>Welcome to Electronic Repair Academy!</h4>
+            <p id="loggedText">You are now logged in.</p>
+            <div class="auth-logged-actions">
+              <a href="#courses" class="btn btn-secondary">My Courses</a>
+              <button class="btn btn-primary" id="logoutBtn" type="button">Log Out</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" aria-label="Site footer">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4 class="footer-title">Electronic Repair Academy</h4>
+        <p class="footer-text">Training computer and electronic literates from beginner to professional. Hands-on courses in hardware, electronics, software and energy systems.</p>
+        <div class="footer-social" aria-label="Social links">
+          <a href="#home" aria-label="Facebook"> <img src="images/fb.png" alt=""></a>
+          <a href="#home" aria-label="X (Twitter)"> <img src="images/x.png" alt=""></a>
+          <a href="#home" aria-label="Instagram"> <img src="images/ig.png" alt=""></a>
+          <a href="#home" aria-label="YouTube"> <img src="images/yt.png" alt=""></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Learn More</h4>
+        <ul class="footer-links">
+          <li><a href="#services">Our Services</a></li>
+          <li><a href="#courses">Courses We Offer</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#achievements">Why Choose Us</a></li>
+          <li><a href="#auth">Admissions</a></li>
+          <li><a href="#auth">Student Login</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Contact Us</h4>
+        <ul class="footer-contact">
+          <li><span class="contact-icon" aria-hidden="true">&#9742;</span><span>+234 800 123 4567</span></li>
+          <li><span class="contact-icon" aria-hidden="true">&#9993;</span><span>info@electronicrepairacademy.com</span></li>
+          <li><span class="contact-icon" aria-hidden="true">&#9719;</span><span>Mon &ndash; Sat: 8:00am &ndash; 6:00pm</span></li>
+        </ul>
+        <h4 class="footer-title footer-subtitle">Our Location</h4>
+        <p class="footer-text">12 Circuit Board Avenue,<br />Computer Village, Ikeja,<br />Lagos, Nigeria</p>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-title">Pictures</h4>
+        <p class="footer-text">Glimpses of our labs, classes and workshops.</p>
+        <div class="footer-gallery" aria-label="Academy pictures">
+          <div class="gallery-thumb" title="PCB Repair Lab"><span aria-hidden="true">&#9672;</span><small>PCB Repair Lab</small></div>
+          <div class="gallery-thumb" title="Soldering Station"><span aria-hidden="true">&#11042;</span><small>Soldering Station</small></div>
+          <div class="gallery-thumb" title="Phone Repair Bench"><span aria-hidden="true">&#9635;</span><small>Phone Repair Bench</small></div>
+          <div class="gallery-thumb" title="Computer Hardware Class"><span aria-hidden="true">&#11043;</span><small>Hardware Class</small></div>
+          <div class="gallery-thumb" title="Electronics Practicals"><span aria-hidden="true">&#9673;</span><small>Electronics Practicals</small></div>
+          <div class="gallery-thumb" title="Graduation Ceremony"><span aria-hidden="true">&#11044;</span><small>Graduation Day</small></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2026</span> Electronic Repair Academy. All rights reserved.</p>
+      <p class="footer-tag">1000+ students trained &bull; Beginner to Professional</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
